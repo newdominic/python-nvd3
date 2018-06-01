@@ -72,6 +72,7 @@ class NVD3Chart(object):
         :keyword: **height** - default - ``''``
         :keyword: **width** - default - ``''``
         :keyword: **show_values** - default - ``False``
+        :keyword: **value_format** - default - ``.2f``
         :keyword: **stacked** - default - ``False``
         :keyword: **focus_enable** - default - ``False``
         :keyword: **resize** - define - ``False``
@@ -128,6 +129,7 @@ class NVD3Chart(object):
         self.height = kwargs.get('height', '')
         self.width = kwargs.get('width', '')
         self.show_values = kwargs.get('show_values', False)
+        self.value_format = kwargs.get('value_format', '.2f')
         self.stacked = kwargs.get('stacked', False)
         self.focus_enable = kwargs.get('focus_enable', False)
         self.resize = kwargs.get('resize', False)

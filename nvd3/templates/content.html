@@ -38,6 +38,9 @@
     {% endif %}
     {% if chart.show_values %}
         chart.showValues(true);
+        {% if chart.show_values %}
+        chart.valueFormat(d3.format('{{ chart.show_values }}'));
+        {% endif %}
     {% endif %}
 
     {% endblock rendering_opts %}
